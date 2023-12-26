@@ -5,7 +5,7 @@ function delay(ms) {
 async function apostas(dinheiro, meta) { // funcao de aposta
     let runs = 0;
     while (dinheiro > 1 && dinheiro < meta) {
-        await delay(100); // Adiciona um atraso de 200 ms
+        await delay(100); // adiciona um atraso nas apostas
         runs++;
         let dinheiroAposta = dinheiro / 2; // quantidade de dinheiro apostado por aposta
         dinheiro -= dinheiroAposta;
